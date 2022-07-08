@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- custom style -->
+  <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+
+  <title>Responsive Coffee-shop website</title>
+</head>
+
+<body>
+
+  <!--  header  starts -->
+
+  <header>
+    <a href="#" class="logo">
+      <img src="{% static 'images/logo.png' %}" alt="">
+    </a>
+
+    <!-- nav-links starts -->
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a href="#home" class="scroller">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="scroller">About</a>
+        </li>
+        <li>
+          <a href="#menu" class="scroller">Menu</a>
+        </li>
+        <li>
+          <a href="#products" class="scroller">Products</a>
+        </li>
+        <li>
+          <a href="#review" class="scroller">Review</a>
+        </li>
+        <li>
+          <a href="#contact" class="scroller">Contact</a>
+        </li>
+        <li>
+          <a href="#blogs" class="scroller">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- nav-links ends -->
+
+    <div class="icons">
+      <i class="fas fa-search search-icon"></i>
+      <i class="fas fa-shopping-cart cart-icon"></i>
+      <i class="fas fa-bars menu-bar"></i>
+    </div>
+    <!-- search- bar starts -->
+    <div class="search-bar">
+      <input type="search" placeholder="search for ....">
+      <i class="fas fa-search"></i>
+    </div>
+    <!-- search- bar ends -->
+
+    <!-- cart container starts -->
+    <div class="cart-container">
+
+      <!-- single cart starts-->
+      <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="{% static '/images/cart-item-1.png' %}" alt="">
+        <div class="cart-content">
+          <h4>Cart Item-1</h4>
+          <p>$15.99</p>
+        </div>
+      </div>
+      <!-- single cart ends-->
+      <!-- single cart starts-->
+      <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="{% static '/images/cart-item-2.png' %}" alt="">
+        <div class="cart-content">
+          <h4>Cart Item-2</h4>
+          <p>$15.99</p>
+        </div>
+      </div>
+      <!-- single cart ends-->
+      <!-- single cart starts-->
+      <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="{% static '/images/cart-item-3.png' %}" alt="">
+        <div class="cart-content">
+          <h4>Cart Item-3</h4>
+          <p>$15.99</p>
+        </div>
+      </div>
+      <!-- single cart ends-->
+      <!-- single cart starts-->
+      <div class="cart-item">
+        <i class="fas fa-times"></i>
+        <img src="{% static '/images/cart-item-4.png' %}" alt="">
+        <div class="cart-content">
+          <h4>Cart Item-4</h4>
+          <p>$15.99</p>
+        </div>
+      </div>
+      <!-- single cart ends-->
+      <div class="btn">
+        <a href="#">Checkout Now</a>
+      </div>
+    </div>
+    <!-- cart container ends -->
+  </header>
+  <!-- header ends -->
+
+
+  <!-- hero section starts -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>fresh coffe in the morning</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi minima iusto omnis eligendi nemo.</p>
+      <div class="btn-1">
+        <a href="#">get it now</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- Hero section ends -->
+
+
+  <!-- about section starts -->
+
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="title">
+        <h3>about<span> us</span></h3>
+      </div>
+      <div class="about-content">
+        <div class="img-box">
+          <img src="{% static '/images/about-img.jpeg' %}" alt="">
+        </div>
+
+        <div class="about-content-text">
+          <h3>what makes our coffee special?</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni voluptas adipisci dignissimos
+            necessitatibus cupiditate facilis ullam maxime exercitationem expedita ad.Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. At, laborum? consectetur adipisicing elit. At, laborum?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, laborum? Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. At, laborum?</p>
+          <div class="btn-1">
+            <a href="#">learn more</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- about section ends -->
+
+  <!-- menu section starts -->
+  <section class="menu" id="menu">
+    <div class="memu-container">
+      <div class="title">
+        <h3>our <span>menu</span></h3>
+      </div>
+
+      <div class="menu-content">
+
+        <div class="box">
+          <img src="{% static '/images/menu-1.png' %}" alt="">
+          <h4>tasty and healthy</h4>
+          <p>$15.999</p>
+          <div class="btn-1">
+            <a href="#">add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="{% static '/images/menu-2.png' %}" alt="">
+          <h4>tasty and healthy</h4>
+          <p>$15.999</p>
+          <div class="btn-1">
+            <a href="#">add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="{% static '/images/menu-3.png' %}"alt="">
+          <h4>tasty and healthy</h4>
+          <p>$15.999</p>
+          <div class="btn-1">
+            <a href="#">add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="{% static '/images/menu-4.png' %}" alt="">
+          <h4>tasty and healthy</h4>
+          <p>$15.999</p>
+          <div class="btn-1">
+            <a href="#">add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="{% static '/images/menu-5.png' %}" alt="">
+          <h4>tasty and healthy</h4>
+          <p>$15.999</p>
+          <div class="btn-1">
+            <a href="#">add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="{% static '/images/menu-6.png' %}" alt="">
+          <h4>tasty and healthy</h4>
+          <p>$15.999</p>
+          <div class="btn-1">
+            <a href="#">add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- menu section ends -->
+  <!-- Products section starts -->
+  <section class="products" id="products">
+    <div class="products-container">
+      <div class="title">
+        <h3>latest <span>products</span></h3>
+      </div>
+      <div class="products-content">
+        <!-- single product -->
+        <div class="p-box">
+          <div class="prod-top">
+            <div class="mini-box">
+              <i class="fas fa-shopping-cart cart-icon"></i>
+            </div>
+            <div class="mini-box">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="mini-box">
+              <i class="fas fa-eye"></i>
+            </div>
+          </div>
+          <img src="{% static '/images/product-1.png' %}" alt="">
+          <h4>fresh coffee</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$15.99</p>
+
+        </div>
+        <!-- single product -->
+
+        <!-- single product -->
+        <div class="p-box">
+          <div class="prod-top">
+            <div class="mini-box">
+              <i class="fas fa-shopping-cart cart-icon"></i>
+            </div>
+            <div class="mini-box">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="mini-box">
+              <i class="fas fa-eye"></i>
+            </div>
+          </div>
+          <img src="{% static '/images/product-2.png' %}" alt="">
+          <h4>fresh coffee</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$15.99</p>
+
+        </div>
+        <!-- single product -->
+        <!-- single product -->
+        <div class="p-box">
+          <div class="prod-top">
+            <div class="mini-box">
+              <i class="fas fa-shopping-cart cart-icon"></i>
+            </div>
+            <div class="mini-box">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="mini-box">
+              <i class="fas fa-eye"></i>
+            </div>
+          </div>
+          <img src="{% static '/images/product-3.png' %}" alt="">
+          <h4>fresh coffee</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>$15.99</p>
+
+        </div>
+        <!-- single product -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Products section ends -->
+
+  <!-- review section starts -->
+  <section class="review" id="review">
+    <div class="review-container">
+      <div class="title">
+        <h3>customer's<span> review</span></h3>
+      </div>
+      <div class="review-content">
+
+        <!-- review starts -->
+        <div class="rev-box">
+          <div class="quote">
+            <img src="{% static '/images/quote-img.png' %}" alt="">
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae quidem cum voluptas voluptatem
+            earum quia sequi sit iusto totam ratione aspernatur eligendi porro, eius consequuntur doloremque, libero vel
+            corporis.</p>
+          <div class="img-box">
+            <img src="{% static '/images/pic-1.png' %}" alt="">
+          </div>
+          <h4>john deo</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <!-- review ends -->
+
+        <!-- review starts -->
+        <div class="rev-box">
+          <div class="quote">
+            <img src="{% static '/images/quote-img.png' %}" alt="">
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae quidem cum voluptas voluptatem
+            earum quia sequi sit iusto totam ratione aspernatur eligendi porro, eius consequuntur doloremque, libero vel
+            corporis.</p>
+          <div class="img-box">
+            <img src="{% static '/images/pic-2.png' %}" alt="">
+          </div>
+          <h4>john deo</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <!-- review ends -->
+        <!-- review starts -->
+        <div class="rev-box">
+          <div class="quote">
+            <img src="{% static '/images/quote-img.png' %}" alt="">
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae quidem cum voluptas voluptatem
+            earum quia sequi sit iusto totam ratione aspernatur eligendi porro, eius consequuntur doloremque, libero vel
+            corporis.</p>
+          <div class="img-box">
+            <img src="{% static '/images/pic-3.png' %}" alt="">
+          </div>
+          <h4>john deo</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <!-- review ends -->
+      </div>
+    </div>
+  </section>
+  <!-- review section ends -->
+
+  <!-- contact section starts -->
+  <section class="contact-us" id="contact">
+    <div class="contact-container">
+      <div class="title">
+        <h3>contact<span> us</span></h3>
+      </div>
+      <div class="contact-content">
+        <iframe id="gmap_canvas"
+          src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+        <div class="form-box">
+          <form action="">
+            <h3>GET IN TOUCH</h3>
+            <div class="input">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="name">
+            </div>
+            <div class="input">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="email">
+            </div>
+            <div class="input">
+              <i class="fas fa-phone"></i>
+              <input type="text" placeholder="number">
+            </div>
+          </form>
+          <div class="btn-1">
+            <a href="#">contact now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+  <!-- blogs section starts -->
+  <section class="blogs" id="blogs">
+    <div class="blogs-container">
+      <div class="title">
+        <h3>our <span>blogs</span></h3>
+      </div>
+      <div class="blogs-content">
+
+        <!-- single blog start -->
+        <div class="blog-box">
+          <img src="{% static '/images/blog-1.jpeg' %}" alt="">
+          <div class="blog-box-content">
+            <h4>tasty and refreshing coffee</h4>
+            <h5>By Admin / 1st May, 2021</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, consequatur.</p>
+            <div class="btn-1">
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+        <!-- single blog ends -->
+        <!-- single blog start -->
+        <div class="blog-box">
+          <img src="{% static '/images/blog-2.jpeg' %}" alt="">
+          <div class="blog-box-content">
+            <h4>tasty and refreshing coffee</h4>
+            <h5>By Admin / 1st May, 2021</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, consequatur.</p>
+            <div class="btn-1">
+              <a href="#">read more</a>
+            </div>
+          </div>
+
+        </div>
+        <!-- single blog ends -->
+        <!-- single blog start -->
+        <div class="blog-box">
+          <img src="{% static '/images/blog-3.jpeg' %}" alt="">
+          <div class="blog-box-content">
+            <h4>tasty and refreshing coffee</h4>
+            <h5>By Admin / 1st May, 2021</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, consequatur.</p>
+            <div class="btn-1">
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+        <!-- single blog ends -->
+      </div>
+    </div>
+  </section>
+  <!-- blogs section ends -->
+
+  <!-- footer section starts -->
+  <footer>
+    <div class="footer-container">
+      <div class="socials">
+
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+
+
+
+      </div>
+      <ul class="footer-links">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Review</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Blogs</a>
+        </li>
+      </ul>
+
+      <p>All rights reserved</p>
+    </div>
+  </footer>
+  <!-- footer section ends -->
+
+  <script src="{% static '/js/main.js' %}"></script>
+</body>
+
+</html>
